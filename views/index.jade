@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	#app
+		#app-body
+			img(src='/images/cloud1.png', alt='Cloud 1', class="cloud1")
+			img(src='/images/cloud2.png', alt='Cloud 2', class="cloud2")
+			#loader Enter City Name
+			#app-form
+				form(id='form')
+					div
+						input(type='submit', value='', name='submit', id='submit')
+						i(class='fas fa-search')
+					div
+						input(type='text', name='location', id='location' placeholder='ex: Seattle', autocomplete='off')
+					div
+						input(type='button', value='', name='clear', id='clear')
+						i(class='fas fa-times')
+			#app-now
+			#app-forecast
+
+
+
